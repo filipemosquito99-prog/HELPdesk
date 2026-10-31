@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{%block title%}chamados{%endblock%}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+    </head>
+    <body>
+        <a   href="/" class="inicio">inicio</a>
+        <div class="logo-canto">
+    {% block logo %}HELP<span>DESK</span>{% endblock %}
+</div>
+        <nav>
+            <a href="/ver_chamados">ver chamados</a>
+            <a href="/fazer_chamados">fazer chamados</a>
+            <a href="/sobre">sobre</a>
+        </nav>
+        {%block content%}
+        {%endblock%}
+    </body>
+</html>

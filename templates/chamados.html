@@ -1,0 +1,45 @@
+{%extends "base.html"%}
+{%block title%}Chamados{%endblock%}
+{%block content%}
+<div class="janela larga">
+    <div class="janela-titulo">
+        <span>Chamados</span>
+        <div class="janela-botoes">
+            <span>_</span>
+            <span>□</span>
+            <span>X</span>
+        </div>
+    </div>
+    <div class="janela-conteudo">
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Título</th>
+                <th>Descrição</th>
+                <th>Prioridade</th>
+                <th>Status</th>
+                <th>ação</th>
+            </tr>
+            {% for chamado in chamados %}
+            <tr>
+                <td>{{ chamado[0] }}</td>
+                <td>{{ chamado[1] }}</td>
+                <td>{{ chamado[2] }}</td>
+                <td>{{ chamado[3] }}</td>
+                <td>{{ chamado[4] }}</td>
+                <td>
+                    <form method="post" action="/chamados/{{ chamado[0] }}">
+                        <select name="status">   
+                            <option value="aberto">aberto</option>
+                            <option value="em andamento">em andamento</option>
+                            <option value="resolvido">resolvido</option>
+                        </select>
+                        <button type="submit">salvar</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+{%endblock%}
