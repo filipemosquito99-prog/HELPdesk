@@ -1,13 +1,13 @@
 {%extends "base.html"%}
 {%block title%}Fazer Chamado{%endblock%}
 {%block content%}
-    <h1>Novo Chamado</h1>
+    <h1 class="titulo">Novo Chamado</h1>
     <form method="post" class="formulario">
         <input type="text" name="titulo" placeholder="Título do chamado">
         <textarea name="descricao" placeholder="Descrição do chamado"></textarea>
         <select name="prioridade">
             <option value="baixa">Baixa</option>
-            <option value="media">Média</option>
+            <option value="média">Média</option>
             <option value="alta">Alta</option>
         </select>
         <button>Enviar</button>

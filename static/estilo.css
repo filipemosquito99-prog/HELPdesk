@@ -149,3 +149,8 @@ td, select, td button {
     display: block;
     font-size: 60px;
 }
+.titulo {
+    text-align: center;
+    font-size: 64px;
+    margin: 20px 0;
+}
