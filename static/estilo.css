@@ -5,12 +5,6 @@ body{
     background: linear-gradient(to bottom right, #1a1a6e, #7fe0e8);
     color : white;
     font-family: 'Bebas Neue', sans-serif;
-    .caixa{
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-    }
-
 }
 nav{
     display: flex;
@@ -70,9 +64,6 @@ th, td{
     gap: 4px;
 }
 .janela-botoes span {
-    gap: 4px;
-}
-.janela-botoes span {
     background: silver;
     color: black;
     border: 2px outset white;
@@ -80,17 +71,6 @@ th, td{
     height: 22px;
     text-align: center;
     line-height: 22px;
-}
-.aviso {
-    background: #c0c0c0;
-    border: 3px solid;
-    border-color: white #404040 #404040 white;
-    outline: 1px solid black;
-}
-.aviso-titulo {
-    background: #3333bb;
-    color: white;
-    padding: 6px 10px;
 }
 .formulario {
     display: flex;
