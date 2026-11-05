@@ -1,88 +1,88 @@
-# Help Desk
+# 🖥️ Help Desk
 
-Sistema de chamados de TI com visual inspirado no Windows 98, feito em Python e Flask.
+Mini sistema de chamados (help desk) feito em **Python**, **Flask** e **SQLite**, com visual inspirado no **Windows 98**.
 
-O usuário abre um chamado, e o técnico acompanha a lista e atualiza o status de cada um (aberto, em andamento ou resolvido). Os chamados ficam guardados num banco de dados SQLite.
+Projeto criado para praticar desenvolvimento web, banco de dados e orientação a objetos, simulando o fluxo de um setor de suporte técnico: abrir um chamado, acompanhar a fila e atualizar o status.
 
-Projeto de portfólio criado por **Filipe Mesquita**, estudante de Análise e Desenvolvimento de Sistemas, em busca de uma vaga em Suporte Técnico.
+---
 
-## Telas
+## ✨ Funcionalidades
 
-### Página inicial
-![Página inicial](prints/inicio.png)
+- 📝 **Abrir chamado** por meio de um formulário
+- 📋 **Listar chamados** em uma tabela
+- 🔄 **Alterar o status** de cada chamado
+- 💾 **Armazenamento em banco de dados** SQLite
+- 🎨 **Visual retrô** estilo Windows 98, com botões pixelados e janelas clássicas
+- 📄 Páginas: **Início**, **Abrir chamado**, **Ver chamados** e **Sobre mim**
 
-### Abrir chamado
-![Abrir chamado](prints/fazer-chamados.png)
+## 🖼️ Telas
 
-### Lista de chamados
-![Lista de chamados](prints/ver-chamados.png)
+| Início | Abrir chamado |
+|--------|---------------|
+| ![Início](prints/inicio.png) | ![Abrir chamado](prints/abrir_chamado.png) |
 
-### Sobre
-![Sobre](prints/sobre.png)
+| Ver chamados | Sobre mim |
+|--------------|-----------|
+| ![Ver chamados](prints/ver_chamados.png) | ![Sobre mim](prints/sobre.png) |
 
-## O que o sistema faz
+## 🛠️ Tecnologias
 
-- Abre chamados com título, descrição e prioridade (baixa, média ou alta)
-- Lista todos os chamados numa tabela
-- Atualiza o status de cada chamado com um clique
-- Cria o banco de dados sozinho na primeira execução
-- Mantém o mesmo menu e o mesmo visual em todas as páginas, usando um template base
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-## Tecnologias
-
-- **Python 3** e **Flask** (rotas e servidor web)
-- **SQLite** (banco de dados, pelo módulo `sqlite3` do Python)
-- **HTML** com templates **Jinja2**
-- **CSS** feito à mão, sem frameworks
-- Fonte **Bebas Neue** (Google Fonts)
-
-## Como rodar
-
-Você precisa do Python 3 instalado.
+## 📁 Estrutura do projeto
 
 ```
+helpdesk/
+├── app.py            # Rotas e lógica da aplicação (Flask)
+├── classes.py        # Classe responsável pelo banco de dados (POO)
+├── status.db         # Banco de dados SQLite
+├── templates/        # Páginas HTML (base.html e telas)
+└── static/
+    └── estilo.css    # Estilo Windows 98
+```
+
+## 🧠 O que aprendi
+
+- Criar rotas e páginas com **Flask**
+- Usar **templates** com herança (`base.html`) para reaproveitar o layout
+- Gravar e consultar dados com **SQLite**
+- Organizar o código com **orientação a objetos**, agrupando as funções do banco em uma classe
+- Estilizar com **CSS** um visual temático
+- Versionar o projeto com **Git** e **GitHub**
+
+## ▶️ Como executar
+
+1. Clone o repositório:
+```bash
 git clone https://github.com/filipemosquito99-prog/HELPdesk.git
 cd HELPdesk
-python -m pip install flask
+```
+
+2. Instale o Flask:
+```bash
+pip install flask
+```
+
+3. Execute a aplicação:
+```bash
 python app.py
 ```
 
-Depois, abra `http://127.0.0.1:5000` no navegador.
+4. Abra no navegador o endereço que o Flask mostrar no terminal (normalmente `http://127.0.0.1:5000`).
 
-## Rotas
+## 🚀 Próximos passos
 
-| Endereço | O que faz |
-|---|---|
-| `/` | Página inicial |
-| `/fazer_chamados` | Formulário para abrir um chamado |
-| `/ver_chamados` | Tabela com todos os chamados |
-| `/chamados/<id>` | Atualiza o status de um chamado (envio do formulário da tabela) |
-| `/sobre` | Sobre o projeto |
+- [ ] Filtrar chamados por status
+- [ ] Adicionar prioridade aos chamados
+- [ ] Tela de login para técnicos
 
-## Estrutura do projeto
+## 👨‍💻 Autor
 
-```
-HELPdesk/
-├── app.py                  # rotas e funções do banco de dados
-├── static/
-│   └── estilo.css          # visual da aplicação
-├── templates/
-│   ├── base.html           # estrutura e menu usados por todas as páginas
-│   ├── inicio.html
-│   ├── fazer_chamados.html
-│   ├── chamados.html
-│   └── sobre.html
-└── prints/                 # imagens usadas neste README
-```
+**Filipe Mesquita**
+Estudante de Análise e Desenvolvimento de Sistemas | Fortaleza, CE
 
-O arquivo `status.db` (o banco de dados) é criado automaticamente ao rodar o projeto e não vai para o repositório.
-
-## Próximos passos
-
-- Refatorar o código para orientação a objetos, agrupando as funções do banco numa classe
-- Botão para excluir chamados
-- Mostrar o status atual já selecionado na caixa de escolha da tabela
-
-## Autor
-
-Filipe Mesquita, [github.com/filipemosquito99-prog](https://github.com/filipemosquito99-prog)
+🔗 GitHub: [filipemosquito99-prog](https://github.com/filipemosquito99-prog)
