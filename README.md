@@ -8,22 +8,22 @@ Projeto criado para praticar desenvolvimento web, banco de dados e orientação 
 
 ## ✨ Funcionalidades
 
-- 📝 **Abrir chamado** por meio de um formulário
+- 📝 **fazer chamados** por meio de um formulário
 - 📋 **Listar chamados** em uma tabela
 - 🔄 **Alterar o status** de cada chamado
 - 💾 **Armazenamento em banco de dados** SQLite
 - 🎨 **Visual retrô** estilo Windows 98, com botões pixelados e janelas clássicas
-- 📄 Páginas: **Início**, **Abrir chamado**, **Ver chamados** e **Sobre mim**
+- 📄 Páginas: **Início**, **Abrir chamado**, **ver chamados** e **Sobre mim**
 
 ## 🖼️ Telas
 
-| Início | Abrir chamado |
+| Início | fazer chamados |
 |--------|---------------|
-| ![Início](prints/inicio.png) | ![Abrir chamado](prints/abrir_chamado.png) |
+| ![Início](prints/inicio.png) | ![Abrir chamado](prints/fazer-chamados.png.png) |
 
 | Ver chamados | Sobre mim |
 |--------------|-----------|
-| ![Ver chamados](prints/ver_chamados.png) | ![Sobre mim](prints/sobre.png) |
+| ![Ver chamados](prints/ver-chamados.png) | ![Sobre mim](prints/sobre.png) |
 
 ## 🛠️ Tecnologias
 
