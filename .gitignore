@@ -1,2 +1,4 @@
 status.db
 __pycache__/
+.claude/
+skills-lock.json
